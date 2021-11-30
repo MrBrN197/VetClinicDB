@@ -76,6 +76,7 @@ INSERT INTO animals (
   escape_attempts,
   neutered,
   species_id,
+  owner_id,
   weight_kg
 ) VALUES (
     'Agumon',
@@ -83,6 +84,7 @@ INSERT INTO animals (
     0,
     true,
     2,
+    1,
     10.23
 );
 
@@ -93,12 +95,14 @@ INSERT INTO animals (
   escape_attempts,
   neutered,
   species_id,
+  owner_id,
   weight_kg
 ) VALUES (
     'Gabumon',
     '2018-11-15',
     2,
     true,
+    2,
     2,
     8
 );
@@ -110,6 +114,7 @@ INSERT INTO animals (
   escape_attempts,
   neutered,
   species_id,
+  owner_id,
   weight_kg
 ) VALUES (
     'Pikachu',
@@ -117,6 +122,7 @@ INSERT INTO animals (
     1,
     false,
     1,
+    2,
     15.04
 );
 -- Animal: Her name is Devimon. May 12th, 2017, 11kg. She is neutered and she has tried to escape 5 times.
@@ -126,6 +132,7 @@ INSERT INTO animals (
   escape_attempts,
   neutered,
   species_id,
+  owner_id,
   weight_kg
 ) VALUES (
     'Devimon',
@@ -133,6 +140,7 @@ INSERT INTO animals (
     5,
     true,
     2,
+    3,
     11
 );
 
@@ -143,6 +151,7 @@ INSERT into animals (
 	weight_kg,
 	neutered,
 	species_id,
+  owner_id,
   escape_attempts
 ) VALUES (
 	'Charmander',
@@ -150,6 +159,7 @@ INSERT into animals (
 	-11,
 	 false,
    1,
+   4,
 	 0
 );
 
@@ -160,6 +170,7 @@ INSERT into animals (
 	weight_kg,
 	neutered,
 	species_id,
+  owner_id,
   escape_attempts
 ) VALUES (
 	'Plantmon',
@@ -167,6 +178,7 @@ INSERT into animals (
 	-5.7,
 	 true,
 	 2,
+   3,
    2
 );
 
@@ -177,6 +189,7 @@ INSERT into animals (
 	weight_kg,
 	neutered,
 	species_id,
+  owner_id,
   escape_attempts
 ) VALUES (
 	'Squirtle',
@@ -184,6 +197,7 @@ INSERT into animals (
 	-12.13,
 	false,
   1,
+  4,
 	3
 );
 
@@ -194,6 +208,7 @@ INSERT into animals (
 	weight_kg,
 	neutered,
 	species_id,
+  owner_id,
   escape_attempts
 ) VALUES (
 	'Angemon',
@@ -201,6 +216,7 @@ INSERT into animals (
 	-45,
 	true,
   2,
+  5,
 	1
 );
 
@@ -211,6 +227,7 @@ INSERT into animals (
 	weight_kg,
 	neutered,
 	species_id,
+  owner_id,
   escape_attempts
 ) VALUES (
 	'Boarmon',
@@ -218,6 +235,7 @@ INSERT into animals (
 	20.4,
 	true,
   2,
+  5,
 	7
 );
 
@@ -228,6 +246,7 @@ INSERT into animals (
 	weight_kg,
 	neutered,
 	species_id,
+  owner_id,
   escape_attempts
 ) VALUES (
 	'Blossom',
@@ -235,6 +254,7 @@ INSERT into animals (
 	17,
 	true,
   1,
+  4,
 	3
 );
 
