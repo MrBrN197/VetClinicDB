@@ -57,17 +57,11 @@ INSERT INTO owners (
 );
 
 
-INSERT INTO species (
-  name
-) VALUES (
-  'Pokemon'
-);
-
-INSERT INTO species (
-  name
-) VALUES (
-  'Digimon'
-);
+INSERT INTO species 
+  ( name ) 
+VALUES
+  ( 'Pokemon' ),
+  ( 'Digimon' );
 
 -- Animal: His name is Agumon. He was born on Feb 3rd, 2020, and currently weighs 10.23kg. He was neutered and he has never tried to escape.
 INSERT INTO animals (
@@ -270,4 +264,21 @@ VALUES
   ('Maisy Smith', 26, '2019-01-17'),
   ('Stephanie Mendez', 64, '1981-05-04'),
   ('Jack Harkness', 38, '2008-06-08');
+COMMIT;
+
+
+BEGIN;
+-- Insert vets data
+
+-- 'William Tatcher', 'Pokemon'
+-- 'Stephanie Mendez', 'Digimon, Pokemon'
+-- 'Jack Harkness', 'Digimon'
+
+INSERT INTO specializations 
+  (vet_id, species_id)
+VALUES 
+  (1, 1),
+  (3, 1),
+  (3, 2),
+  (4, 2);
 COMMIT;
