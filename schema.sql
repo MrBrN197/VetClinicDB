@@ -44,10 +44,10 @@ CREATE TABLE animals (
     CONSTRAINT fk_owners FOREIGN KEY(owner_id) REFERENCES owners(id)
 );
 
-CREATE TABLE visits {
+CREATE TABLE visits (
     vet_id int,
     animal_id int,
     date_of_visit date,
     CONSTRAINT fk_vets FOREIGN KEY(vet_id) REFERENCES vets(id),
     CONSTRAINT fk_animals FOREIGN KEY(animal_id) REFERENCES animals(id)
-}
+)
