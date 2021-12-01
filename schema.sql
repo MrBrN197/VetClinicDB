@@ -1,8 +1,10 @@
 /* Database schema to keep the structure of entire database. */
 
+DROP TABLE IF EXISTS specializations;
 DROP TABLE IF EXISTS animals;
 DROP TABLE IF EXISTS owners;
 DROP TABLE IF EXISTS species;
+DROP TABLE IF EXISTS vets;
 
 CREATE TABLE owners (
     id SERIAL NOT NULL PRIMARY KEY,
@@ -13,6 +15,20 @@ CREATE TABLE owners (
 CREATE TABLE species (
     id SERIAL NOT NULL PRIMARY KEY,
     name varchar(100)
+);
+
+CREATE TABLE vets (
+    id serial not null primary key,
+    name varchar(100),
+    age int,
+    date_of_graduation date
+);
+
+CREATE TABLE specializations (
+    vet_id int,
+    species_id int,
+    CONSTRAINT fk_species FOREIGN KEY(species_id) REFERENCES species(id),
+    CONSTRAINT fk_vets FOREIGN KEY(vet_id) REFERENCES vets(id)
 );
 
 CREATE TABLE animals (
