@@ -1,6 +1,7 @@
 /* Database schema to keep the structure of entire database. */
 
 DROP TABLE IF EXISTS specializations;
+DROP TABLE IF EXISTS visits;
 DROP TABLE IF EXISTS animals;
 DROP TABLE IF EXISTS owners;
 DROP TABLE IF EXISTS species;
